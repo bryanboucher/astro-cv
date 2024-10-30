@@ -404,7 +404,7 @@ input[type="submit"]:disabled {
 }
 
 .nav-item {
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 .nav-item__selected {
@@ -415,6 +415,8 @@ input[type="submit"]:disabled {
   font-weight: 700;
   pointer-events: none;
   color: purple;
+  text-decoration: underline;
+  text-decoration-color: purple;
 }
 
 /* Add smooth transitions for elements */
