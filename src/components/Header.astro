@@ -46,4 +46,32 @@
     </div>
   </nav>
 </section>
+<script>
+  function updateNavState() {
+    // Get the current path of the page
+    const currentPath = window.location.pathname;
 
+    // Select all <li> elements that contain nav links
+    const navItems = document.querySelectorAll(".nav-item");
+
+    navItems.forEach((item) => {
+      // Find the nested <a> inside the <li>
+      const link = item.querySelector("a");
+
+      // Check if the link's href matches the current path
+      if (link && link.getAttribute("href") === currentPath) {
+        // Add the selected-state class to the <li>
+        item.classList.add("nav-item__selected");
+      } else {
+        // Remove the class if it doesn't match (useful if state changes)
+        item.classList.remove("nav-item__selected");
+      }
+    });
+  }
+
+  // Run the function on initial load
+  document.addEventListener("DOMContentLoaded", updateNavState);
+
+  // Run the function after each view transition completes
+  document.addEventListener("astro:after-swap", updateNavState);
+</script>
