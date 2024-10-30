@@ -347,11 +347,13 @@ input[type="submit"]:disabled {
   height: auto;
   max-height: 125px;
   z-index: 6;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .headshot-container {
   margin-left: 10px;
+  height: auto;
+  width: auto;
 }
 
 .header {
