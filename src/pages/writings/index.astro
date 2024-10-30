@@ -11,18 +11,18 @@ const posts = (await getCollection("writings")).sort(
 <Layout title="Writings - Your Name">
   <main>
     <h1>Writings</h1>
-    {
+    <!--{
       posts.map((post) => (
         <div class="post-item">
           <a href={`/writings/${post.slug}/`}>
             <h2 class="title">{post.data.title}</h2>
           </a>
-          <!-- <span class="date">
+          <span class="date">
             <FormattedDate date={post.data.pubDate}/>
-          </span> -->
+          </span>
         </div>
       ))
-    }
+    }-->
 
     <style>
       .post-item {
