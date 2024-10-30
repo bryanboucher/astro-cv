@@ -121,6 +121,10 @@ a:hover {
   text-decoration-color: var(--accent);
 }
 
+.link {
+  color: blue;
+}
+
 hr {
   border-bottom: 0.5px solid var(--grey-light);
   margin: 16px 0 16px 0;
@@ -343,7 +347,7 @@ input[type="submit"]:disabled {
 .headshot {
   border-radius: 50%;
   margin: auto;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   max-height: 125px;
   z-index: 6;
@@ -352,8 +356,6 @@ input[type="submit"]:disabled {
 
 .headshot-container {
   margin-left: 10px;
-  width: 100%;
-  height: auto;
 }
 
 .header {
