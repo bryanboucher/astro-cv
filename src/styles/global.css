@@ -86,7 +86,7 @@ p {
 
 h1 {
   font-size: 1.5rem;
-  line-height: 0.75;
+  line-height: 1.2;
 }
 
 h2 {
@@ -360,12 +360,11 @@ input[type="submit"]:disabled {
 
 .header {
   display:flex;
-  flex-direction: column;
   justify-content:space-between;
   @media screen and (min-width: 431px) {
-      max-width: 600px;
+      max-width: 375px;
   }
-  padding-top: 32px;
+  padding-top: 16px;
 }
 
 .header a {
@@ -378,8 +377,8 @@ input[type="submit"]:disabled {
   display: flex;
 }
 
-.align-end {
-  align-self: end;
+.align-center {
+  align-self: center;
 }
 
 .scroll-nav-wrapper {
