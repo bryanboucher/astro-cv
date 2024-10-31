@@ -360,11 +360,18 @@ input[type="submit"]:disabled {
 
 .header {
   display:flex;
+  flex-direction: column;
   justify-content:space-between;
   @media screen and (min-width: 431px) {
-      max-width: 300px;
+      max-width: 600px;
   }
   padding-top: 32px;
+}
+
+.header a {
+  display: flex;
+  text-decoration: none;
+  color: inherit;
 }
 
 .flex {
