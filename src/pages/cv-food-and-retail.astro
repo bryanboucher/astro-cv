@@ -1,0 +1,140 @@
+---
+interface Props {
+  title: string;
+}
+
+import Footer from "@components/Footer.astro";
+import "@styles/global.css";
+import { ViewTransitions } from "astro:transitions";
+
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1" />
+    <ViewTransitions />
+
+    <title>Bryan Boucher</title>
+    <meta name="description" content="Welcome to my personal site." />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta property="og:title" content={title} />
+    <meta property="og:site_name" content="Your Name" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    <!-- <meta property="og:image" content="/assets/img/" /> -->
+    <meta property="og:image:alt" content="Welcome to my personal site." />
+    <meta property="og:locale" content="en" />
+    <meta property="og:description" content="Welcome to my personal site." />
+  </head>
+  <body>
+    <div class="header" transition:persist>
+      <h1 class="flex align-center cv-fr-header">Bryan Boucher</h1>
+      <div class="flex headshot-container" style="margin-left:30px;">
+        <img
+          src="https://bryanboucher.com/assets/img/my-headshot-large-sq.webp"
+          alt="Black and white headshot of Bryan"
+          class="flex headshot"
+          style="max-height:none; box-shadow:none;"
+        />
+      </div>
+    </div>
+    <main class="body-main" transition:animate="fade">
+      <div class="cv-fr-intro cv-fr-content">
+        <h2 class="cv-fr-content-heading">
+          Hi! 👋<br>Thanks for visiting my site.
+        </h2>  
+      <p class="p-block">
+        Following an early background in restaurant hospitality, I've spent the past decade
+        leading digital experience for outdoor brands.
+      </p>
+      <p class="p-block">
+        As I plan next career steps, I'm looking for a satisfying, hands-on
+        service role in an environment focused on quality food and beverages.
+      </p>
+      <p class="p-block">
+        For more detail about my background,
+        <a
+        class="link"
+        href="https://bryanboucher.com/assets/bryan-boucher-resume-hospitality-and-retail.pdf"
+        target="_blank"
+        rel="noopener noreferrer">view my full resume</a
+      >.
+      </p>
+      </div>
+      <div class="cv-fr-container">
+        <section class="cv-fr-section-1">
+          <div class="cv-fr-content cv-fr-content-margin cv-fr-content-1">
+            <h2 class="cv-fr-content-heading">
+              Rich expertise in hospitality & service
+            </h2>
+            <p>
+              I have more than 5 years of experience in restaurant hospitality,
+              covering front of house management, wine stewarding, hosting, bar
+              service, and table service
+            </p>
+          </div>
+          <img
+            src="/assets/moka.jpg"
+            alt="line-drawn sketch of a baguette"
+            class="cv-fr-img cv-fr-img-1"
+          />
+        </section>
+
+        <section class="cv-fr-section-2">
+          <img
+            src="/assets/baguette.jpg"
+            alt="line-drawn sketch of a moka pot coffee maker"
+            class="cv-fr-img cv-fr-img-2"
+          />
+          <div class="cv-fr-content cv-fr-content-margin cv-fr-content-2">
+            <h2 class="cv-fr-content-heading">
+              Professional customer experience management
+            </h2>
+            <p>
+              I've continued to hone my skills around customer service as a digital experience leader in the outdoor brand industry
+            </p>
+          </div>
+        </section>
+
+        <section class="cv-fr-section-3">
+          <div class="cv-fr-content cv-fr-content-margin cv-fr-content-3">
+            <h2 class="cv-fr-content-heading">A return to roots</h2>
+            <p>
+              Eager to get out from behind a desk, I'm excited about working with people in a food and beverage service role. I have part-time, flexible availability.
+            </p>
+            <p class="p-block">
+              To explore my full work history,
+              <a
+              class="link"
+              href="https://bryanboucher.com/assets/bryan-boucher-resume-hospitality-and-retail.pdf"
+              target="_blank"
+              rel="noopener noreferrer">view my resume</a
+            >.
+            </p>
+          </div>
+          <img
+            src="/assets/wine.jpg"
+            alt="line-drawn sketch of a wine glass next to a bottle"
+            class="cv-fr-img cv-fr-img-3"
+          />
+        </section>
+      </div>
+    </main>
+    <Footer transition:persist />
+  </body>
+</html>
