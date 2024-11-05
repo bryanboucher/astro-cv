@@ -511,8 +511,7 @@ img {
 
 .cv-fr-content-spacing {
   margin: 0 0 4em;
-  min-width: 100%;
-  max-width: 100%;
+  min-width: 0;
 }
 
 .cv-fr-section-1 {
