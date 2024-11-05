@@ -455,6 +455,7 @@ img {
 .cv-fr-container {
   display: grid;
   contain: layout;
+  width: 100%;
   grid-template-rows: 1fr 0.7fr 1fr;
   grid-template-columns: repeat(6,1fr)/*0.1fr 1fr 1fr 0.1fr 0.1fr 1fr 1fr 0.1fr*/;
   @media screen and (min-width: 541px) {
@@ -511,7 +512,8 @@ img {
 
 .cv-fr-content-spacing {
   margin: 0 0 4em;
-  min-width: 0;
+  min-width: 100%;
+  overflow-x: hidden;
 }
 
 .cv-fr-section-1 {
