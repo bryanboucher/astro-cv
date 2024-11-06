@@ -349,23 +349,33 @@ input[type="submit"]:disabled {
   margin: auto;
   max-width: 100%;
   height: auto;
-  max-height: 125px;
   z-index: 6;
   object-fit: cover;
 }
 
 .headshot-container {
-  margin-left: 10px;
+  margin-left: 30px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
+  padding-top: 16px;
   @media screen and (min-width: 431px) {
     max-width: 375px;
   }
-  padding-top: 16px;
-}
+  h1 {
+    line-height: 0.8;
+    letter-spacing: -3px;
+    font-size: 3em;
+    @media screen and (min-width:415px) {
+      font-size: 3.25em;
+    }
+    @media screen and (min-width:431px) {
+      font-size: 3.5em;
+    }
+  }
+  }
 
 .header a {
   display: flex;
@@ -462,13 +472,14 @@ img {
 }
 
 .cv-fr-header {
-  font-family: "Playfair Display";
-  color: #06402b;
-  font-size: 3em;
   line-height: 0.8;
   letter-spacing: -3px;
-  @media screen and (min-width: 431px) {
-    font-size: 4em;
+  font-size: 3em;
+  @media screen and (min-width:415px) {
+    font-size: 3.25em;
+  }
+  @media screen and (min-width:431px) {
+    font-size: 3.5em;
   }
 }
 
