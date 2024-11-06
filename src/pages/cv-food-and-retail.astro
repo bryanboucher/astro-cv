@@ -54,6 +54,59 @@ const { title } = Astro.props;
         />
       </div>
     </div>
+    <section class="scroll-nav-wrapper flex" transition:persist>
+      <div class="scroll-nav-full-width-bg"></div>
+      <!--<div
+        role="button"
+        class="button"
+        style="
+  max-height: 100%;
+  z-index: 6;
+  position: absolute;
+  right: 0;
+  align-self: center;
+  display: flex;
+  background: #fafafa;
+  border: 0.5px solid black;
+  box-shadow: -20px 0 10px 0 var(--white-light);
+"
+        id="slideRight"
+      >
+        &gt;&gt;
+      </div>-->
+      <nav class="scroll-nav flex">
+        <div role="list" class="scroll-nav-list-slider flex">
+          <div class="nav-item-wrapper">
+            <li class="nav-item">Contact |</li>
+          </div>
+          <div class="nav-item-wrapper">
+            <li class="nav-item">
+              Email:
+              <a data-id="nav-link" href="mailto:bryanhboucher@gmail.com"
+                >bryanhboucher@gmail.com</a
+              >
+            </li>
+          </div>
+          <div class="nav-item-wrapper">
+            <li class="nav-item">
+              Phone:
+              <a data-id="nav-link" href="tel:+16032051246">(603) 205-1246</a>
+            </li>
+          </div>
+          <!--<div class="nav-item-wrapper">
+            <li class="nav-item">
+              LinkedIn:
+              <a
+                data-id="nav-link"
+                class="link"
+                href="https://www.linkedin.com/in/bryan-boucher-04078389/"
+                >/bryan-boucher-04078389</a
+              >
+            </li>
+          </div>-->
+        </div>
+      </nav>
+    </section>
     <main class="body-main" transition:animate="fade">
       <div class="cv-fr-container">
         <div class="cv-content-section">
