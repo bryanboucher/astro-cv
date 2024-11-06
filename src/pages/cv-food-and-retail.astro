@@ -55,31 +55,33 @@ const { title } = Astro.props;
       </div>
     </div>
     <main class="body-main" transition:animate="fade">
-      <div class="cv-fr-intro cv-fr-content">
-        <h2 class="cv-fr-content-heading">
-          Hi! 👋<br />Thanks for visiting my website.
-        </h2>
-        <p class="p-block">
-          Following an early background in restaurant hospitality, I've spent
-          the past decade leading digital experience for outdoor brands.
-        </p>
-        <p class="p-block">
-          As I plan my next career step, I'm looking for a part-time, hands-on
-          service role in an environment focused around quality food and beverages.
-        </p>
-        <p class="p-block">
-          For more detail about my background,
-          <a
-            class="link"
-            href="https://bryanboucher.com/assets/bryan-boucher-resume-hospitality-and-retail.pdf"
-            target="_blank"
-            rel="noopener noreferrer">view my full resume</a
-          >.
-        </p>
-      </div>
       <div class="cv-fr-container">
-        <section class="cv-fr-section-1">
-          <div class="cv-fr-content cv-fr-content-spacing cv-fr-content-1">
+        <div class="cv-content-section">
+          <div class="cv-fr-intro cv-fr-content">
+            <h2 class="cv-fr-content-heading">
+              Hi! 👋<br />Thanks for visiting my website.
+            </h2>
+            <p class="p-block">
+              Following an early background in restaurant hospitality, I've
+              spent the past decade leading digital experience for outdoor
+              brands.
+            </p>
+            <p class="p-block">
+              As I plan my next career step, I'm looking for a part-time,
+              hands-on service role in an environment focused around quality
+              food and beverages.
+            </p>
+            <p class="p-block">
+              For more detail about my background,
+              <a
+                class="link"
+                href="https://bryanboucher.com/assets/bryan-boucher-resume-hospitality-and-retail.pdf"
+                target="_blank"
+                rel="noopener noreferrer">view my full resume</a
+              >.
+            </p>
+          </div>
+          <div class="cv-fr-content cv-fr-content-1">
             <h2 class="cv-fr-content-heading">
               Rich expertise in hospitality & service
             </h2>
@@ -89,39 +91,23 @@ const { title } = Astro.props;
               hosting, bar service, and table service.
             </p>
           </div>
-          <img
-            src="/assets/moka.jpg"
-            alt="line-drawn sketch of a baguette"
-            class="cv-fr-img cv-fr-img-1"
-          />
-        </section>
-
-        <section class="cv-fr-section-2">
-          <img
-            src="/assets/baguette.jpg"
-            alt="line-drawn sketch of a moka pot coffee maker"
-            class="cv-fr-img cv-fr-img-2"
-          />
-          <div class="cv-fr-content cv-fr-content-spacing cv-fr-content-2">
+          <div class="cv-fr-content cv-fr-content-2">
             <h2 class="cv-fr-content-heading">
               Professional customer experience management
             </h2>
             <p>
-              Since 2015, I've continued to hone my skills around customer service as a
-              digital experience leader in the outdoor brand industry.
+              Since 2015, I've continued to hone my skills around customer
+              service as a digital experience leader in the outdoor brand
+              industry.
             </p>
           </div>
-        </section>
-
-        <section class="cv-fr-section-3">
-          <div class="cv-fr-content cv-fr-content-spacing cv-fr-content-3">
+          <div class="cv-fr-content cv-fr-content-3">
             <h2 class="cv-fr-content-heading">A return to roots</h2>
             <p class="p-block">
-              I'm eager to get out from behind a desk and work
-              in an energizing food and beverage service role.
+              I'm eager to get out from behind a desk and work in an energizing
+              food and beverage service role.
             </p>
-            <p class="p-block">I have flexible part-time availability.
-            </p>
+            <p class="p-block">I have flexible part-time availability.</p>
             <p class="p-block">
               To explore my full work history,
               <a
@@ -132,12 +118,22 @@ const { title } = Astro.props;
               >.
             </p>
           </div>
-          <img
-            src="/assets/wine.jpg"
-            alt="line-drawn sketch of a wine glass next to a bottle"
-            class="cv-fr-img cv-fr-img-3"
-          />
-        </section>
+        </div>
+        <img
+          src="/assets/moka.jpg"
+          alt="line-drawn sketch of a baguette"
+          class="cv-fr-img cv-fr-img-1"
+        />
+        <img
+          src="/assets/baguette.jpg"
+          alt="line-drawn sketch of a moka pot coffee maker"
+          class="cv-fr-img cv-fr-img-2"
+        />
+        <img
+          src="/assets/wine.jpg"
+          alt="line-drawn sketch of a wine glass next to a bottle"
+          class="cv-fr-img cv-fr-img-3"
+        />
       </div>
     </main>
     <Footer transition:persist />
