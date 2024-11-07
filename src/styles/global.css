@@ -349,7 +349,7 @@ input[type="submit"]:disabled {
   margin: auto;
   max-width: 100%;
   height: auto;
-  z-index: 6;
+  z-index: 7;
   object-fit: cover;
 }
 
