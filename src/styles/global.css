@@ -63,7 +63,7 @@ body {
   background-color: var(--white-light);
   color: var(--black-light);
 
-  padding: 2rem;
+  padding: 1.3rem;
   max-width: 45rem;
   margin: 0 auto;
   vertical-align: baseline;
