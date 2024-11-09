@@ -1,50 +1,81 @@
 <div class="header" transition:persist>
-  <a href="https://bryanboucher.com" class="flex align-center" style="text-decoration: none; color: inherit;">
-    <h1>Bryan Boucher</h1>
-  </a>
-  <a href="https://bryanboucher.com" class="flex headshot-container">
-    <img
-      src="https://bryanboucher.com/assets/img/my-headshot-large-sq.webp"
-      alt="Black and white headshot of Bryan"
-      class="flex headshot"
-    />
-  </a>
+  <div class="name-lockup">
+    <a
+      href="https://bryanboucher.com"
+      class="flex align-center"
+      style="text-decoration: none; color: inherit;"
+    >
+      <h1>Bryan Boucher</h1>
+    </a>
+    <a href="https://bryanboucher.com" class="flex headshot-container">
+      <img
+        src="https://bryanboucher.com/assets/img/my-headshot-large-sq.webp"
+        alt="Black and white headshot of Bryan"
+        class="flex headshot"
+      />
+    </a>
+  </div>
 </div>
-
-<section class="scroll-nav-wrapper flex" transition:persist>
-  <div class="scroll-nav-full-width-bg"></div>
+<section class="scroll-nav-wrapper menu flex sticky" transition:persist>
+  <div class="scroll-nav-fw-bg"></div>
   <nav class="scroll-nav flex">
-        <div role="list" class="scroll-nav-list-slider flex">
-          <div
-            class="nav-item-wrapper"
-          >
-            <li class="nav-item">
-              <a data-id="nav-link" href="/"
-                >About</a
-              >
-            </li>
-          </div>
-          <div
-            class="nav-item-wrapper"
-          >
-            <li class="nav-item">
-              <a
-                data-id="nav-link"
-                href="/resume/">Resume</a
-              >
-            </li>
-          </div>
-          <div
-            class="nav-item-wrapper"
-          >
-            <li class="nav-item">
-              <a
-                data-id="nav-link"
-                href="/contact/">Contact</a
-              >
-            </li>
-          </div>
+    <div role="list" class="scroll-nav-list-slider flex align-center">
+      <div class="nav-item-wrapper">
+        <li class="nav-item">
+          <a data-id="nav-link" href="/">About</a>
+        </li>
+      </div>
+      <div class="nav-item-wrapper">
+        <li class="nav-item">
+          <a data-id="nav-link" href="/resume/"> Work Bio</a>
+        </li>
+      </div>
+      <div class="nav-item-wrapper">
+        <li class="nav-item">
+          <a data-id="nav-link" href="/now/">Now & Next</a>
+        </li>
+      </div>
     </div>
+  </nav>
+</section>
+<section class="contact scroll-nav-wrapper flex" transition:persist>
+  <div class="scroll-nav-fw-bg"></div>
+  <nav class="scroll-nav flex">
+    <div role="list" class="scroll-nav-list-slider flex align-center">
+      <div class="nav-item-wrapper flex">
+        <li class="nav-item contact-item flex align-center">
+          Email:
+          <a
+            data-id="contact-link"
+            class="flex align-center"
+            href="mailto:bryanhboucher@gmail.com"
+            ><img
+              src="/assets/img/right-arrow.svg"
+              alt=""
+              class="button-right-arrow-before"
+            />bryanhboucher@gmail.com</a
+          >
+        </li>
+      </div>
+      <div class="nav-item-wrapper">
+        <li class="nav-item contact-item flex align-center">
+          LinkedIn:
+          <a
+            data-id="contact-link"
+            class="flex align-center"
+            href="https://www.linkedin.com/in/bryan-boucher-04078389/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="/assets/img/right-arrow.svg"
+              alt=""
+              class="button-right-arrow-before"
+            />/bryan-boucher-04078389</a
+          >
+        </li>
+      </div>
+    </div>
+    <div class="list-slider-shadow-end"></div>
   </nav>
 </section>
 <script>

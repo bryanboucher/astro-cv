@@ -3,6 +3,86 @@ import Layout from "@layouts/Layout.astro";
 import "@styles/global.css";
 ---
 
-<Layout title="Bryan's Resume">
-  <p>View my resume <a class="link" href="https://bryanboucher.com/assets/bryan-boucher-resume.pdf" target="_blank" rel="noopener noreferrer">here</a>.</p>  
+<Layout title="Work Bio">
+  <div class="resume-intro-container">
+    <button
+      onclick="window.open('https://bryanboucher.com/assets/bryan-boucher-resume.pdf', '_blank', 'noopener,noreferrer')"
+      class="my-button flex align-center"
+    >
+      View My Full Resume<img
+        src="/assets/img/right-arrow.svg"
+        alt="Black and white headshot of Bryan"
+        class="button-right-arrow nostyle"
+      />
+    </button>
+  </div>
+  <p>
+    <strong>Intro</strong>
+  </p>
+  <p class="p-block">
+    I specialize in helping organizations bridge business strategy and
+    technology to create impactful experiences for the customers and communities
+    they serve.
+  </p>
+  <p>
+    <strong>Background</strong>
+  </p>
+  <p class="p-block">
+    With a foundation in business analytics and robust knowledge around digital
+    tech, I bring a strategic 'big picture' lens to customer experience work,
+    and excel at transforming data-driven insights into exceptional CX and
+    business wins.
+  </p>
+  <p class="p-block">
+    While I've worked at just two companies (I tend to be loyal), I've gained my
+    experience over a progression of diverse roles spanning 4 functional areas
+    and 8 titles over the past 9 years.
+  </p>
+  <p class="p-block">A past example of my skills in action might involve:</p>
+  <ul class="p-block list-emojis-before">
+    <li>
+      Diving into analytics data (or coaching an analyst) to produce an insight
+    </li>
+    <li>
+      Leading design and development work for a responsive product or process
+      enhancement
+    </li>
+    <li>
+      Aligning on a proof of concept with customer-facing stakeholders who offer
+      unique perspective
+    </li>
+    <li>Designing an experiment to test and iterate the solution</li>
+    <li>
+      Leading deployment, monitoring, and measuring results to guide iteration
+    </li>
+  </ul>
+  <p class="p-block">
+    On a broader basis, I've led cross-functional teams managing a $100M revenue
+    stream, and am experienced leading through significant organizational change. I'm
+    equally comfortable honing strategy with senior leadership as I am
+    collaborating with developers on technical solutions.
+  </p>
+  <p>
+    <strong>Skills & Technical Bits</strong>
+  </p>
+  <p class="p-light">
+    # Web Design/Dev / Platforms / Monitoring / Personalization / Analytics
+  </p>
+  <p class="p-block">
+    HTML/CSS, basic JS, Git, Figma / SFCC, headless arch / Akamai mPulse, Data
+    Dog / Adobe Target, Kibo/Monetate / GTM, GA4, Adobe Analytics, Content
+    Square, HotJar, Clarity
+  </p>
+  <p class="p-light">
+    # Business Reporting & Analysis / Data Viz / Presentations
+  </p>
+  <p class="p-block">
+    Microsoft Office Suite, Advanced Excel skills, Alteryx / PowerBI, Tableau /
+    PPT, Keynote
+  </p>
+  <p class="p-light"># Project Management & Collaboration</p>
+  <p class="p-block">
+    Agile & scrum experience, Atlassian suite (Jira, Confluence), Smartsheet,
+    Microsoft Project / Slack, Teams, Zoom
+  </p>
 </Layout>
