@@ -382,7 +382,7 @@ input[type="submit"]:disabled {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 16px;
+  padding-top: 4px;
 
   h1 {
     line-height: 0.8;
