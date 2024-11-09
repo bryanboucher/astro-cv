@@ -142,6 +142,8 @@ a:hover {
 
 .link {
   color: blue;
+  text-decoration-color: unset;
+  text-decoration-thickness: unset;
 }
 
 hr {
