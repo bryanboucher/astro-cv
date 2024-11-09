@@ -564,13 +564,18 @@ input[type="submit"]:disabled {
   text-decoration-color: purple;
 }
 
+.last-nav-item {
+  margin-right: 25px;
+}
+
 .list-slider-shadow-end {
-  box-shadow: -1px -6px 10px 8px var(--white-light);
-  width: 0;
-  height: 90%;
+  box-shadow: -10px 0 25px 25px var(--white-light);
+  width: 15px;
+  height: 1px;
   display: flex;
-  background-color: #fafafa;
+  background-color: transparent;
   z-index: 6;
+  align-self: center;
 }
 
 .contact {
