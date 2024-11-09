@@ -544,6 +544,10 @@ input[type="submit"]:disabled {
   width: 100%;
 }
 
+::-webkit-scrollbar {
+  display: none; 
+}
+
 .nav-item-wrapper {
   margin: 0 10px 0 0;
 }
@@ -565,13 +569,11 @@ input[type="submit"]:disabled {
 }
 
 .last-nav-item {
-  margin-right: 25px;
+  margin-right: 40px;
 }
 
 .list-slider-shadow-end {
-  box-shadow: -10px 0 25px 25px var(--white-light);
-  width: 15px;
-  height: 1px;
+  box-shadow: -8px 0 20px 24px var(--white-light);
   display: flex;
   background-color: transparent;
   z-index: 6;
