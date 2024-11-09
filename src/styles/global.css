@@ -442,14 +442,15 @@ input[type="submit"]:disabled {
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.2s;
-  margin: 0 0 1em;
-  width: 100%;
+  margin: 15px auto;
+  width: 80%;
   justify-content: center;
   align-items: center;
 
   @media screen and (min-width: 541px) {
     width: 50%;
     min-width: 300px;
+    margin: 0 0 1em;
   }
 }
 
@@ -463,9 +464,22 @@ input[type="submit"]:disabled {
   padding: 0.07em 0.1em 0 0;
 }
 
-.resume-intro-container {
+.resume-button-container {
   border-bottom: 1px solid var(--white-mid);
   margin-bottom: 1em;
+  @media screen and (max-width: 540px) {
+    border-bottom: none;
+    margin-bottom: 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(240, 240, 240, 0.9);
+    height: 5.5em;
+    left: 50%;
+    right: 50%;
+    margin: 0 -50vw;
+    border-radius: 40px 40px 0 0;
+  }
 }
 
 .list-emojis-before {
@@ -569,7 +583,7 @@ input[type="submit"]:disabled {
 }
 
 .last-nav-item {
-  margin-right: 40px;
+  margin-right: 50px;
 }
 
 .list-slider-shadow-end {
